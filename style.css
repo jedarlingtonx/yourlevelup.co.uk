@@ -791,6 +791,7 @@ footer {
   cursor: pointer;
   padding: 4px;
   z-index: 200;
+  position: relative;
 }
 
 .nav-hamburger span {
@@ -840,6 +841,8 @@ footer {
     justify-content: center;
     gap: 2rem;
     z-index: 150;
+    overflow-y: auto;
+    padding: 5rem 2rem 2rem;
   }
 
   .nav-links.open {
