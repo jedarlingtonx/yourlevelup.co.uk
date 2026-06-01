@@ -11,14 +11,12 @@
 
 <!-- MOBILE MENU OVERLAY -->
 <div class="mobile-menu" id="mobileMenu">
-  <ul>
-    <li><a href="#about" onclick="closeMenu()">About</a></li>
-    <li><a href="#services" onclick="closeMenu()">Services</a></li>
-    <li><a href="#pricing" onclick="closeMenu()">Pricing</a></li>
-    <li><a href="#hours" onclick="closeMenu()">Hours</a></li>
-    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-    <li><a href="#pricing" class="mobile-menu-cta" onclick="closeMenu()">Join Now</a></li>
-  </ul>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#pricing" onclick="closeMenu()">Pricing</a>
+  <a href="#hours" onclick="closeMenu()">Hours</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#pricing" class="mobile-menu-cta" onclick="closeMenu()">Join Now</a>
 </div>
 
 <!-- NAV -->
@@ -36,6 +34,7 @@
     <span></span><span></span><span></span>
   </button>
 </nav>
+
 <script>
   function toggleMenu() {
     document.getElementById('mobileMenu').classList.toggle('open');
