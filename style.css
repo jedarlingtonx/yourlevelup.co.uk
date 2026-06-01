@@ -593,6 +593,7 @@ nav {
 
 .price-btn-dark:hover {
   opacity: 0.85;
+  color: var(--lime) !important;
 }
 
 /* =============================================
