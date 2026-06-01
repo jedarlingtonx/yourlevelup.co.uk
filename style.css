@@ -779,6 +779,60 @@ footer {
 }
 
 /* =============================================
+   MOBILE MENU OVERLAY
+   ============================================= */
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0a0a0a;
+  z-index: 200;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-menu ul a {
+  font-size: 2rem;
+  color: #aaa;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: color 0.2s;
+}
+
+.mobile-menu ul a:hover {
+  color: var(--white);
+}
+
+.mobile-menu-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--lime) !important;
+  color: var(--black) !important;
+  padding: 0.75rem 2.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* =============================================
    HAMBURGER MENU
    ============================================= */
 
@@ -826,51 +880,15 @@ footer {
 
   nav {
     padding: 1rem 1.5rem;
+    z-index: 300;
   }
 
   .nav-links {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(10, 10, 10, 0.98);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    z-index: 150;
-    overflow-y: auto;
-    padding: 5rem 2rem 2rem;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-links a {
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
   }
 
   .nav-cta-desktop {
     display: none;
-  }
-
-  .nav-cta-mobile {
-    display: block;
-    margin-top: 1rem;
-  }
-
-  .nav-cta-mobile a {
-    background: var(--lime);
-    color: var(--black) !important;
-    padding: 0.75rem 2rem;
-    font-size: 0.9rem !important;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
   }
 
   .nav-hamburger {
