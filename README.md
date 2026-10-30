@@ -6,7 +6,6 @@ A clean, bold website for **Your Level Up**, an independent gym.
 
 - `index.html` — Main website page
 - `style.css` — All styles
-- 
 
 ## Customise Before Going Live
 
