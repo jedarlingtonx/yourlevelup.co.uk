@@ -773,6 +773,70 @@ footer {
 }
 
 .footer-bottom p { font-size: 0.75rem; color: #555; }
+.footer-bottom a { color: #888; text-decoration: none; }
+.footer-bottom a:hover { color: var(--white); }
+
+/* =============================================
+   PRIVACY / TEXT PAGES
+   ============================================= */
+
+.prose {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem 5rem;
+}
+
+.prose h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.prose h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.03em;
+  margin: 2.5rem 0 0.75rem;
+}
+
+.prose p, .prose li {
+  color: #bbb;
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.prose p { margin-bottom: 1rem; }
+.prose ul { padding-left: 1.25rem; margin-bottom: 1rem; }
+.prose li { margin-bottom: 0.5rem; }
+.prose strong { color: var(--white); font-weight: 500; }
+.prose a { color: var(--lime); }
+.prose .meta { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
+
+.tw { overflow-x: auto; margin-bottom: 1rem; }
+
+.tbl {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tbl th, .tbl td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  color: #bbb;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.tbl th { color: var(--lime); font-weight: 500; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+.todo { background: var(--lime); color: var(--black); padding: 0 0.3rem; }
 
 /* =============================================
    RESPONSIVE — TABLET (max 900px)
@@ -820,6 +884,9 @@ footer {
    ============================================= */
 
 @media (max-width: 600px) {
+
+  .nav-logo { font-size: 1.35rem; white-space: nowrap; }
+  .nav-cta { white-space: nowrap; padding: 0.5rem 1rem; }
 
   .hero { padding: 80px 1.25rem 3.5rem; }
   .hero h1 { font-size: clamp(3.5rem, 22vw, 6rem); }
