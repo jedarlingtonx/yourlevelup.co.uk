@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Page not found – Your Level Up</title>
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+.nf {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7rem 3rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.nf-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.4;
+}
+.nf > *:not(.nf-grid) { position: relative; }
+.nf-code {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(7rem, 26vw, 16rem);
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  color: var(--lime);
+  margin-bottom: 1.5rem;
+}
+.nf h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.nf p {
+  max-width: 480px;
+  color: #aaa;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+}
+.nf-btns { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+@media (max-width: 600px) {
+  .nf { padding: 6rem 1.25rem 3rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">YOUR <span>LEVEL UP</span></a>
+  <a href="/" class="nav-cta">Home</a>
+</nav>
+
+<main class="nf">
+  <div class="nf-grid"></div>
+  <div class="nf-code">404</div>
+  <h1>This page has gone missing.</h1>
+  <p>The link might be out of date, or the address might have a typo. Head back to the homepage and pick things up from there.</p>
+  <div class="nf-btns">
+    <a href="/" class="btn-primary">Back to the homepage</a>
+    <a href="/#contact" class="btn-ghost">Get in touch →</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    <p>© 2026 Your Level Up. All rights reserved.</p>
+    <p><a href="/privacy.html">Privacy Notice</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
