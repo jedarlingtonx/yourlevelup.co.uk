@@ -2,6 +2,10 @@
 .git
 .gitignore
 .wrangler
+.github
+.DS_Store
 node_modules
 wrangler.jsonc
 README.md
+CNAME
+CNAME.txt
