@@ -1,9 +1,0 @@
-wrangler.jsonc
-.assetsignore
-README.md
-CNAME
-CNAME.txt
-.git
-.github
-.DS_Store
-node_modules
